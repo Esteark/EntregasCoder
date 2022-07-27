@@ -1,0 +1,68 @@
+//Inicia estilos para la seccion 404 o pagina no encontrada
+.conten {
+  padding: 10%;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+
+  .conten__img {
+    width: 100%;
+    @include d-flex(column, nowrap, center, center);
+    img {
+      width: 300px;
+      display: block;
+      animation: animates 2s linear infinite alternate;
+      -webkit-animation: animates 2s linear infinite alternate;
+    }
+
+    .conten__number {
+      text-align: center;
+      font-size: 4rem;
+      top: 9.8rem;
+      animation: animates_text 2s linear infinite alternate;
+      -webkit-animation: animates_text 2s linear infinite alternate;
+    }
+  }
+
+  .conten__Description {
+    .conten__error {
+      margin: 50px;
+      font-weight: $boldhard;
+      font-size: $textMd;
+    }
+  }
+}
+
+@keyframes animates {
+  0% {
+    transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+    -moz-transform: translateX(5%);
+    -ms-transform: translateX(5%);
+    -o-transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+    -moz-transform: translateX(-5%);
+    -ms-transform: translateX(-5%);
+    -o-transform: translateX(-5%);
+  }
+}
+
+@keyframes animates_text {
+  0% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+  }
+}

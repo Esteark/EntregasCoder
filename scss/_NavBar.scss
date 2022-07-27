@@ -1,0 +1,67 @@
+nav {
+  background: map-get($map: $PaletaColores, $key: "Maincolor");
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  ul {
+    float: right;
+    margin-right: 20px;
+    li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+      a {
+        color: map-get($map: $PaletaColores, $key: "whiteColor");
+        font-family: $MainFont;
+        font-weight: $bold;
+        font-size: $textMd;
+        text-transform: capitalize;
+        padding: 7px 13px;
+        border-radius: 13px;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        -ms-border-radius: 13px;
+        -o-border-radius: 13px;
+
+        &.active,
+        &:hover {
+          background: map-get($map: $PaletaColores, $key: "HovercolorNavItems");
+
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  font-family: $MainFont;
+  font-size: $textLg;
+  color: map-get($map: $PaletaColores, $key: "whiteColor");
+  font-weight: $boldhard;
+  line-height: 80px;
+  padding: 5px 50px;
+  cursor: pointer;
+
+  span {
+    color: map-get($map: $PaletaColores, $key: "SecondaryColor");
+  }
+}
+
+.checkbtn {
+  font-size: $textLg;
+  color: map-get($map: $PaletaColores, $key: "whiteColor");
+  float: right;
+  padding: 3px 50px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}

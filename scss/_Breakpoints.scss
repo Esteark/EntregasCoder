@@ -1,0 +1,322 @@
+@media (max-width: 1024px) {
+  .fondo-banner {
+    height: 300px;
+    .contenedor-banner {
+      h3 {
+        @include TextosTitulos($MainFont, $textMdintermedio, $bold);
+        span {
+          border: 3px solid map-get($map: $PaletaColores, $key: "whiteColor");
+          padding: 10px 10px;
+          color: map-get($map: $PaletaColores, $key: "whiteColor");
+        }
+      }
+    }
+  }
+
+  .conten {
+    padding-top: 10%;
+    width: 100%;
+    .conten__img {
+      img {
+        width: 250px;
+      }
+    }
+    .conten__Description {
+      .conten__error {
+        margin: 30px 0;
+        padding: 0 0;
+      }
+
+      a {
+        margin: 10% 0;
+        font-size: $textSm;
+      }
+    }
+  }
+}
+
+@media (max-width: 952px) {
+  .logo {
+    font-size: $textMdintermedio;
+    padding-left: 50px;
+  }
+  nav {
+    ul {
+      li {
+        a {
+          font-size: $textMd;
+        }
+      }
+    }
+  }
+
+  .content-cards {
+    .TituloCards {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      @include TextosTitulos($MainFont, $textLg, $boldhard);
+    }
+    .container {
+      @include d-flex(column, nowrap, center, center);
+      height: 1200px;
+
+      .card {
+        margin-top: 20px;
+        height: 480px;
+      }
+    }
+  }
+
+  header {
+    @include d-flex(column-reverse, nowrap, center, center);
+
+    .TextosHeader {
+      margin: 0 3%;
+      @include d-flex(column, nowrap, center, center);
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    .img-header {
+      margin-top: 90px;
+      @include img-tamaño(auto, 350px);
+    }
+  }
+
+  .contendor-cards {
+    padding-top: 3%;
+    .content {
+      width: 45%;
+    }
+  }
+
+  .contact {
+    padding: 30%;
+
+    .container-contacto {
+      flex-direction: column;
+      .contact-Info,
+      .contactForm {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+    }
+  }
+
+  .conten {
+    padding-top: 35%;
+    width: 100%;
+    .conten__img {
+      img {
+        width: 250px;
+      }
+    }
+    .conten__Description {
+      .conten__error {
+        margin: 30px 0;
+        padding: 0 0;
+      }
+
+      a {
+        margin: 10% 0;
+        font-size: $textSm;
+      }
+    }
+  }
+
+  .textoproductos {
+    text-align: center;
+    font-size: $textSm;
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    font-size: $textMd;
+  }
+  .checkbtn {
+    display: block;
+    padding: 20px 50px;
+  }
+  nav {
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: map-get($map: $PaletaColores, $key: "Maincolor");
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      padding-top: 30px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      li {
+        display: block;
+        line-height: 80px;
+        a {
+          font-size: $textMd;
+
+          &:hover,
+          &:active {
+            background: none;
+            color: map-get($map: $PaletaColores, $key: "SecondaryColor");
+          }
+        }
+      }
+    }
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  header {
+    .TextosHeader {
+      margin: 0 3%;
+      @include d-flex(column, nowrap, center, center);
+      h1 {
+        text-align: center;
+        margin: 10px;
+      }
+      p {
+        text-align: center;
+        margin: 15px;
+      }
+    }
+    .img-header {
+      margin-top: 100px;
+      @include img-tamaño(100%, 350px);
+    }
+  }
+
+  .content-cards {
+    .container {
+      @include d-flex(column, nowrap, center, center);
+    }
+  }
+
+  .fondo-banner {
+    height: 300px;
+    .contenedor-banner {
+      h3 {
+        margin: 30px;
+        @include TextosTitulos($MainFont, $textMd, $bold);
+        span {
+          border: 3px solid map-get($map: $PaletaColores, $key: "whiteColor");
+          padding: 10px 10px;
+          color: map-get($map: $PaletaColores, $key: "whiteColor");
+        }
+      }
+
+      .cen {
+        @include TextosTitulos($Secondaryfont, $textMdintermedio, $bold);
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .SecFooter {
+    text-align: center;
+    @include d-flex(column, nowrap, center, center);
+  }
+  .contendor-cards {
+    padding-top: 3%;
+    .content {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    padding-top: 30%;
+
+    .container-contacto {
+      flex-direction: column;
+      .contact-Info,
+      .contactForm {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .fondo-banner {
+    height: 300px;
+    .contenedor-banner {
+      h3 {
+        margin: 30px;
+        @include TextosTitulos($MainFont, $textSm, $bold);
+        span {
+          border: 1px solid map-get($map: $PaletaColores, $key: "whiteColor");
+          padding: 5px 5px;
+          color: map-get($map: $PaletaColores, $key: "whiteColor");
+        }
+      }
+
+      .cen {
+        @include TextosTitulos($Secondaryfont, $textMdintermedio, $bold);
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .SecFooter {
+    div {
+      h3 {
+        @include TextosTitulos($MainFont, $textMd, $bold);
+      }
+    }
+  }
+
+  .conten {
+    padding-top: 45%;
+    width: 100%;
+    .conten__img {
+      img {
+        width: 250px;
+      }
+    }
+    .conten__Description {
+      .conten__error {
+        margin: 30px 0;
+        padding: 0 0;
+      }
+
+      a {
+        margin: 10% 0;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .contact {
+    padding-top: 20%;
+
+    .container-contacto {
+      flex-direction: column;
+      .contact-Info,
+      .contactForm {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+        width: 100%;
+      }
+    }
+  }
+
+  .textoproductos {
+    text-align: center;
+    font-size: $textSm;
+    padding-top: 25%;
+  }
+}

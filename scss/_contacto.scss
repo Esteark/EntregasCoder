@@ -1,0 +1,137 @@
+//empiezan estilos para el formulario de contacto
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  @include d-flex(column, nowrap, center, center);
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(121, 105, 9, 0.6) 30%,
+      rgba(205, 134, 0, 0.5) 100%
+    ),
+    url(../img/fondocontacto.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content-contact {
+    max-width: 800px;
+    text-align: center;
+    h1 {
+      font-size: $textLg;
+      font-weight: $boldhard;
+      color: map-get($map: $PaletaColores, $key: "whiteColor");
+    }
+    p {
+      font-size: $textMd;
+      font-weight: $bold;
+      color: map-get($map: $PaletaColores, $key: "whiteColor");
+    }
+  }
+
+  .container-contacto {
+    width: 100%;
+    @include d-flex(row, nowrap, center, center);
+    margin-top: 30px;
+    .contact-Info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+        .icon {
+          min-width: 60px;
+          height: 60px;
+          background: map-get($map: $PaletaColores, $key: "whiteColor");
+          @include d-flex(row, nowrap, center, center);
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          font-size: 22px;
+        }
+        .text {
+          display: flex;
+          margin-left: 20px;
+          font-size: 16px;
+          color: map-get($map: $PaletaColores, $key: "whiteColor");
+          flex-direction: column;
+          font-weight: $bold;
+          h2 {
+            font-weight: $boldhard;
+            color: map-get($map: $PaletaColores, $key: "Maincolor");
+          }
+        }
+      }
+    }
+
+    .contactForm {
+      width: 40%;
+      padding: 40px;
+      background: map-get($map: $PaletaColores, $key: "whiteColor");
+
+      h2 {
+        font-size: $textLg;
+        color: map-get($map: $PaletaColores, $key: "Maincolor");
+        font-weight: $bold;
+      }
+
+      .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        input,
+        textarea {
+          width: 100%;
+          padding: 5px 0;
+          font-size: 16px;
+          margin: 10px 0;
+          border: none;
+          border-bottom: 2px solid
+            map-get($map: $PaletaColores, $key: "Maincolor");
+          outline: none;
+          resize: none;
+
+          &:focus ~ span,
+          &:valid ~ span {
+            color: map-get($map: $PaletaColores, $key: "SecondaryColor");
+            font-size: $textMd;
+            transform: translateY(-20px);
+            -webkit-transform: translateY(-20px);
+            -moz-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+            -o-transform: translateY(-20px);
+          }
+
+          &[type="submit"] {
+            width: 100px;
+            background: map-get($map: $PaletaColores, $key: "Maincolor");
+            color: map-get($map: $PaletaColores, $key: "whiteColor");
+            border: none;
+            cursor: pointer;
+            padding: 18px;
+          }
+        }
+
+        span {
+          position: absolute;
+          left: 0;
+          padding: 5px 0;
+          font-size: $textMd;
+          margin: 10px 0;
+          font-weight: $boldhard;
+          font-family: $Secondaryfont;
+          pointer-events: none;
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+        }
+      }
+    }
+  }
+}

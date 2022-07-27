@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  @include TextosTitulos($MainFont, $textXl, $boldhard);
+}
+
+h2,
+h3 {
+  @include TextosTitulos($MainFont, $textLg, $boldhard);
+}
+
+p {
+  font-family: $Secondaryfont;
+}

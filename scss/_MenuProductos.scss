@@ -1,0 +1,128 @@
+//Comienzan los estilos para las  product cards
+.textoproductos {
+  text-align: center;
+  padding-top: 10%;
+}
+.contendor-cards {
+  @include d-flex(row, wrap, center, center);
+  width: 100%;
+  padding-top: 2%;
+  margin-bottom: 55px;
+
+  .content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    background: map-get($map: $PaletaColores, $key: "whiteColor");
+
+    &:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transform: translate(0px, -8px);
+      -webkit-transform: translate(0px, -8px);
+      -moz-transform: translate(0px, -8px);
+      -ms-transform: translate(0px, -8px);
+      -o-transform: translate(0px, -8px);
+    }
+
+    .TitulosCards {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+    p {
+      text-align: center;
+      padding: 0 2%;
+      color: map-get($map: $PaletaColores, $key: "graycolortext");
+      padding-top: 0 8px;
+    }
+    h3 {
+      font-size: 20px;
+      text-align: center;
+      color: map-get($map: $PaletaColores, $key: " Maincolor");
+      margin: 0;
+    }
+
+    ul {
+      @include d-flex(row, nowrap, center, center);
+      padding-top: 0;
+      li {
+        padding-top: 5px;
+        .fa {
+          font-size: 26px;
+          transition: 0.4s;
+          -webkit-transition: 0.4s;
+          -moz-transition: 0.4s;
+          -ms-transition: 0.4s;
+          -o-transition: 0.4s;
+          margin: 3px;
+          &:hover {
+            transform: scale(1.3);
+            -webkit-transform: scale(1.3);
+            -moz-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            -o-transform: scale(1.3);
+            transition: 0.6s;
+            -webkit-transition: 0.6s;
+            -moz-transition: 0.6s;
+            -ms-transition: 0.6s;
+            -o-transition: 0.6s;
+          }
+        }
+        .checked {
+          color: map-get($map: $PaletaColores, $key: "SecondaryColor");
+        }
+      }
+    }
+
+    button {
+      text-align: center;
+      font-size: 24px;
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      margin-top: 15px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+      a {
+        font-family: $Secondaryfont;
+        color: map-get($map: $PaletaColores, $key: "whiteColor");
+      }
+    }
+    .comprar-1 {
+      background: map-get($map: $PaletaColores, $key: "Maincolor");
+    }
+    .comprar-2 {
+      background: map-get($map: $PaletaColores, $key: "SecondaryColor");
+    }
+  }
+}
