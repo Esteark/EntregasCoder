@@ -17,6 +17,11 @@
     <meta name="copyright" content="Esteban Ardila Ledesma" />
     <!-- termina metas para seo  -->
     <link rel="stylesheet" href="../css/main.css" />
+    <!-- Animatecss  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="icon" href="../img/chef.ico" />
     <title>Menu Ensaladas Chef Burguer</title>
     <link
@@ -45,11 +50,13 @@
     </nav>
     <!-- Termina navbar  -->
     <section class="textoproductos">
-      <h1>Nuestras ensaladas estan preparadas con los mejores ingredientes</h1>
+      <h1 class="wow animate__animated animate__backInDown">
+        Nuestras ensaladas estan preparadas con los mejores ingredientes
+      </h1>
     </section>
     <!-- Empieza seccion de cartas  -->
     <section class="contendor-cards">
-      <div class="content">
+      <div class="content wow animate__animated animate__bounceIn">
         <img
           src="../img/ensalada1.webp"
           alt="De la relación que los Balcanes mantienen con el Mediterráneo salen recetas que podrían ser muy nuestras, o muy griegas, o muy italianas,o muy paisas, como es esta shopska, frecuente en cualquier comida búlgara "
@@ -70,7 +77,9 @@
         <button class="comprar-1"><a href="#">Agregar al carrito</a></button>
       </div>
 
-      <div class="content">
+      <div
+        class="content wow animate__animated animate__bounceIn animate__delay-1s"
+      >
         <img
           src="../img/ensalada2.webp"
           alt="Uno de los iconos de la restauración hotelera neoyorquina y hoy todo un símbolo del hotel, el Waldorf Astoria. Desde el otro lado del mundo hasta tu plato , realizada por nuestros mejores chefs"
@@ -88,7 +97,9 @@
         <button class="comprar-1"><a href="#">Agregar al carrito</a></button>
       </div>
 
-      <div class="content">
+      <div
+        class="content wow animate__animated animate__bounceIn animate__delay-1s"
+      >
         <img
           src="../img/ensalada3.webp"
           alt="Es fresca, sabrosa y además tiene ese puntito crocante y nuestro toque secreto que le dan sus ingredientes principales, siendo muy agradable al paladar."
@@ -109,7 +120,9 @@
         <button class="comprar-1"><a href="#">Agregar al carrito</a></button>
       </div>
 
-      <div class="content">
+      <div
+        class="content wow animate__animated animate__bounceIn animate__delay-1s"
+      >
         <img
           src="../img/ensalada4.webp"
           alt="El Mediterráneo nos sirve de ejemplo para irradiar frescura desde sus platos y en este caso hacemos una versión griega con todo nuestro estilo chef Burguer donde no falta el queso feta y la aceituna negra."
@@ -130,7 +143,9 @@
         <button class="comprar-1"><a href="#">Agregar al carrito</a></button>
       </div>
 
-      <div class="content">
+      <div
+        class="content wow animate__animated animate__bounceIn animate__delay-1s"
+      >
         <img
           src="../img/ensalada5.webp"
           alt="El estilo provenzal de la ensalada niçoise y todo su sabor  viene cargado con esta nueva receta que tienen nuestros chefs"
@@ -151,7 +166,9 @@
         <button class="comprar-2"><a href="#">Agregar al carrito</a></button>
       </div>
 
-      <div class="content">
+      <div
+        class="content wow animate__animated animate__bounceIn animate__delay-1s"
+      >
         <img
           src="../img/ensalada6.webp"
           alt="Es un icono de la frescura italiana que nuestros mejores chef traen a tu plato con el más fresco mozzarella y tomate."
@@ -169,7 +186,9 @@
         <button class="comprar-2"><a href="#">Agregar al carrito</a></button>
       </div>
 
-      <div class="content">
+      <div
+        class="content wow animate__animated animate__bounceIn animate__delay-1s"
+      >
         <img
           src="../img/ensalada7.webp"
           alt=" La gran contribución hawaiana 'quién estuviera ahora en Hawai' es el famoso poke, popularizado en los últimos años como ejemplo de comida rápida pero sana  atodo el estilo ChefBurguer"
@@ -187,7 +206,9 @@
         <button class="comprar-2"><a href="#">Agregar al carrito</a></button>
       </div>
 
-      <div class="content">
+      <div
+        class="content wow animate__animated animate__bounceIn animate__delay-1s"
+      >
         <img
           src="../img/ensaladacard.webp"
           alt="Es una clásica receta de aprovechamiento, muy típica de la zona de Florencia, que a veces también se encuentra como panmolle. traida hasta tu plato por ChefBurguer"
@@ -206,6 +227,15 @@
       </div>
     </section>
     <!-- Termina cartas  -->
+
+    <!-- Inicia seccion del banner -->
+    <div class="banner-promo">
+      <div class="info">
+        <h2>Muy pronto más variedad</h2>
+        <a href="../views/404.html" class="btn-menus">Leer Más</a>
+      </div>
+    </div>
+    <!-- termina seccion del banner  -->
 
     <!-- Comienza seccion footer  -->
     <footer class="SecFooter">
@@ -227,5 +257,9 @@
       </div>
     </footer>
     <!-- Termina Seccion footer  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
