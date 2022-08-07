@@ -134,6 +134,12 @@
     font-size: $textSm;
     padding-top: 20%;
   }
+
+  .Promo {
+    .slider-frame {
+      width: 600px;
+    }
+  }
 }
 
 @media (max-width: 650px) {
@@ -247,6 +253,12 @@
       }
     }
   }
+
+  .Promo {
+    .slider-frame {
+      width: 400px;
+    }
+  }
 }
 
 @media (max-width: 450px) {
@@ -318,5 +330,11 @@
     text-align: center;
     font-size: $textSm;
     padding-top: 25%;
+  }
+
+  .Promo {
+    .slider-frame {
+      width: 250px;
+    }
   }
 }

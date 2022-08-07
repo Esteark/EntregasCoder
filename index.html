@@ -16,6 +16,11 @@
     <meta name="author" content="Esteban Ardila Ledesma" />
     <meta name="copyright" content="Esteban Ardila Ledesma" />
     <!-- termia metas para seo  -->
+    <!-- Animatecss  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -47,8 +52,8 @@
     <!-- Termina navbar  -->
     <!-- Empieza header  -->
     <header>
-      <div class="TextosHeader">
-        <h1>Somos el restaurante más popular en la ciudad de mMdellín</h1>
+      <div class="TextosHeader wow animate__animated animate__fadeInLeft">
+        <h1>Somos el restaurante más popular en la ciudad de Medellín</h1>
         <p>
           Chef es donde todos cabemos porque, aunque seamos diferentes, siempre
           hay algo que nos une. Tipos: Sailor Jerry, Avocado, Cheese Burguer,
@@ -61,15 +66,21 @@
       <img
         src="img/ImgHeader.webp"
         alt="Somos el restaurante más popular en la ciudad de medellín , Chef burguer siempre a tu servicio"
-        class="img-header"
+        class="img-header wow animate__animated animate__fadeInRight"
       />
     </header>
     <!-- Termina Header  -->
     <!-- Empieza seccion de cards  -->
     <section class="content-cards">
-      <h2 class="TituloCards">¿Qué quieres probar hoy?</h2>
+      <h2
+        class="TituloCards wow animate__animated animate__fadeIn animate__delay-1s"
+      >
+        ¿Qué quieres probar hoy?
+      </h2>
       <div class="container">
-        <div class="card">
+        <div
+          class="card wow animate__animated animate__bounceIn animate__delay-1s"
+        >
           <img
             src="img/pasta10.webp"
             alt="Pasta deliciosa para vegetarianos, con carne y  ingredientes frescos"
@@ -82,7 +93,9 @@
           <a href="views/pastas.html">Quiero comer esto</a>
         </div>
 
-        <div class="card">
+        <div
+          class="card wow animate__animated animate__bounceIn animate__delay-2s"
+        >
           <img
             src="img/burguer1.webp"
             alt="Hamburguesas de diferentes tipos y con la más deliciosa sazón"
@@ -95,7 +108,9 @@
           <a href="views/burguers.html">Quiero comer esto</a>
         </div>
 
-        <div class="card">
+        <div
+          class="card wow animate__animated animate__bounceIn animate__delay-3s"
+        >
           <img
             src="img/ensaladacard.webp"
             alt="Ensalada saludable con vegetables siempre frescos"
@@ -111,7 +126,9 @@
     </section>
     <!-- termina seccion de cards  -->
     <!-- Comienza seccion banner  -->
-    <main class="fondo-banner">
+    <main
+      class="fondo-banner wow animate__animated animate__backInRight animate__delay-1s"
+    >
       <div class="contenedor-banner">
         <h3><span>¿Quieres conocer nuestras promociones?</span></h3>
         <span class="cen">no te las puedes perder</span>
@@ -163,7 +180,9 @@
     <!-- Termina seccion de marcas aliadas  -->
 
     <!-- Empieza seccion del mapa -->
-    <section class="SecMap">
+    <section
+      class="SecMap wow animate__animated animate__fadeIn animate__delay-1s"
+    >
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63456.46430230131!2d-75.63543403675759!3d6.25990786751434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a1d7cabfed%3A0x42d311bd13cc0770!2sChef%20Burger%20Laureles!5e0!3m2!1ses-419!2sco!4v1653956129837!5m2!1ses-419!2sco"
         loading="lazy"
@@ -192,5 +211,9 @@
       </div>
     </footer>
     <!-- Termina Seccion footer  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
